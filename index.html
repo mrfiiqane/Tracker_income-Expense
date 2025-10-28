@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="so">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income & Expense Container</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="switcher">
+        <button id="incomeBtn" class="active">💰 Income</button>
+        <button id="expenseBtn">🧾 Expense</button>
+      </div>
+
+      <!-- INCOME -->
+      <div id="incomeContent" class="content active">
+        <div class="sm_container">
+          <h2 class="text_lr">Income Tracker</h2>
+          <input class="inputs" type="text" id="income-item" placeholder="Item name..." />
+          <input class="inputs" type="number" id="income-amount" placeholder="Amount $" />
+          <select class="inputs  text_sm" id="income-category">
+            <option value="Salary">Salary</option>
+            <option value="Freelance">Freelance</option>
+            <option value="Other">Other</option>
+          </select>
+          <button class="btn_primary text_sm" id="income-add">Add Income</button>
+
+          <ul class="text_md" id="income-list"></ul>
+          <div class="text_md">
+            Total Income: $<span id="income-total">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- EXPENSE -->
+      <div id="expenseContent" class="content">
+        <div class="sm_container">
+          <h2 class="text_lr">Expense Tracker</h2>
+          <input class="inputs" type="text" id="expense-item" placeholder="Item name..." />
+          <input class="inputs" type="number" id="expense-amount" placeholder="Amount $" />
+          <select class="inputs  text_sm" id="expense-category">
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Other">Other</option>
+          </select>
+          <button class="btn_primary  text_sm" id="expense-add">Add Expense</button>
+
+          <ul class="text_md" id="expense-list"></ul>
+          <div class="text_md  ">Total Expense: $<span id="expense-total">0</span></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./script.js"></script>
