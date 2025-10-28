@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="so">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Income & Expense Container</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="container">
       <div class="switcher">
-        <button id="incomeBtn" class="active">💰 Income</button>
-        <button id="expenseBtn">🧾 Expense</button>
+        <button id="incomeBtn" class="active"><i class="fa-solid fa-sack-dollar"></i> Income</button>
+        <button id="expenseBtn"><i class="fa-solid fa-money-bill-transfer"></i> Expense</button>
       </div>
 
       <!-- INCOME -->
       <div id="incomeContent" class="content active">
         <div class="sm_container">
-          <h2 class="text_lr">Income Tracker</h2>
-          <input class="inputs" type="text" id="income-item" placeholder="Item name..." />
-          <input class="inputs" type="number" id="income-amount" placeholder="Amount $" />
+          <h3 class="text_lr">Income Tracker</h3>
+          <input class="inputs" type="text" id="income-item" placeholder="Item name..." required/>
+          <input class="inputs" type="number" id="income-amount" placeholder="Amount $" required/>
           <select class="inputs  text_sm" id="income-category">
             <option value="Salary">Salary</option>
             <option value="Freelance">Freelance</option>
@@ -36,9 +37,9 @@
       <!-- EXPENSE -->
       <div id="expenseContent" class="content">
         <div class="sm_container">
-          <h2 class="text_lr">Expense Tracker</h2>
-          <input class="inputs" type="text" id="expense-item" placeholder="Item name..." />
-          <input class="inputs" type="number" id="expense-amount" placeholder="Amount $" />
+          <h3 class="text_lr">Expense Tracker</h3>
+          <input class="inputs" type="text" id="expense-item" placeholder="Item name..."  required/>
+          <input class="inputs" type="number" id="expense-amount" placeholder="Amount $" required />
           <select class="inputs  text_sm" id="expense-category">
             <option value="Food">Food</option>
             <option value="Transport">Transport</option>
